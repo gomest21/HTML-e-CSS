@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Layouts Web</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--RESET-->
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+
+    <!--ESTILOS PERSONALIZADOS-->
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/layout.css">
+    <link rel="stylesheet" type="text/css" href="./css/graficos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Front-end</h1>
+    </header>
+
+    <section>
+
+        <nav>
+            <a href="homepage.html"><i>Voltar para a Home</i></a><br>
+            <h3>Aulas</h3>
+            <ul class="navegacao">
+                <li><a id="primeiro link">
+                <li><a href="artigo.html">Artigo</a></li>
+                <li><a href="aulas_css.html">Aulas CSS</a></li>
+                <li><a href="layouts_web.html" target="meu_iframe">Layouts Web</a></li>
+                <li><a href="financas.html">Finanças</a></li>
+                <li><a href="fale_conosco.html">Fale Conosco</a></li>
+            </ul>
+
+            <h3>Saiba mais</h3>
+            <ul>
+                <li class="navegacao"><a href="https://www.ebaconline.com.br">EBAC</a></li>
+            </ul>
+        </nav>
+
+        <article>
+
+            <h2>Gráfico 1</h2>
+
+            <div id="grafico-01">
+                <img class="filtro" src="./images/Coruja_420x235.avif" alt="coruja">
+
+                <p align="justify">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                    laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi
+                    architecto beatae vitae dicta sunt, explicabo.
+                    Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia
+                    consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam
+                    est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non
+                    numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem.
+                </p>
+            </div>
+
+
+            <h2>Gráfico 2</h2>
+
+            <div id="grafico-04"></div>
+
+
+            <h2>Imagem Vetorial</h2><br>
+
+            <div id="imagem-vetorial">
+                <img src="./images/lamp.jpg" alt="lâmpada">
+            </div>
+
+            <div>
+                <canvas id="canvas"></canvas>
+            </div>
+
+            <script>
+                var canvas = document.getElementById("canvas");
+                var ctx = canvas.getContext("2d");
+                ctx.fillStyle = #008000;
+                ctx.fillRect(0, 0, 80, 80);
+            </script>
+
+
+            <h2>Vídeo</h2><br>
+
+            <div class="coluna">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FzeXeXR9cCs?si=TE51mzA8hfP-dfIZ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div><br>
+
+
+            <h2>Moldura</h2><br>
+
+            <div class="coluna">
+
+                <!--Cria moldura para carregar uma página dentro de outra-->
+                <iframe src="artigo.html" width="100%" height="400px"></iframe>
+            </div><br>
+
+
+            <h2>Mapa</h2><br>
+
+            <div class="coluna coluna-  100w"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1872774.993834706!2d-49.09179494375001!3d-23.541001399999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57bc513b0395%3A0xf8caecd88e8edbad!2sEBAC!5e0!3m2!1spt-BR!2sbr!4v1696539678451!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+            <div>
+                <ul>
+                    <p align="right"><a href="#top"><i>Voltar ao topo</i></a></p>
+                </ul>
+            </div>
+
+        </article>
+    </section>
+
+    <div>
+        <footer>
+            <h3>Desenvolvido por Tainá</h3>
+        </footer>
+    </div>
+
+</body>
+
+</html>

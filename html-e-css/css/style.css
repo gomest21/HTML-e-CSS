@@ -1,0 +1,218 @@
+/* 
+Arquivo CSS geral com estilos dos elementos de todas as páginas 
+*/
+
+/*Seletor universal - asterisco*/
+* {
+  box-sizing: border-box;
+}
+
+/*Seletor raíz/Root: html - aplicável em todo o html*/
+html {
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+  font-size: 62.5%;
+  /* equivalente a 10px */
+}
+
+/*Seletor Body, p, a, div*/
+body {
+  background-color: black;
+}
+
+h1,
+h2,
+h3,
+p,
+li {
+  font-family: arial, Helvetica, sans-serif;
+}
+
+a {
+  color: #454545;
+  text-decoration: none;
+}
+
+/*chama #primeiro-link dentro de nav que se encontra no arquivo html "homepage"*/
+#primeiro-link a {
+  color: #933;
+}
+
+ul {
+  background-color: transparent;
+  font-size: 20px;
+}
+
+/* "em" é medido em porcentagem do valor de px do elemento pai "ul" 
+por exemplo, 5 é 50%, 8 é 80% da font-size de "ul"*/
+ul li {
+  font-size: .8em;
+  width: 100%;
+  height: 4rem;
+}
+
+p {
+  font-size: 1.6rem;
+  /* equivalente a 16px */
+  font-weight: bold;
+  text-indent: 5px;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2rem;
+  /* equivalente a 20px */
+  font-size: 1.6rem;
+  /* equivalente a 16px */
+  font-size: 20px;
+  height: 3rem;
+  /* equivalente a 30px */
+}
+
+h2 {
+  font-size: 2rem;
+  /* equivalente a 20px */
+  font-size: 1.6rem;
+  /* equivalente a 16px */
+  font-size: 40px;
+  height: 3rem;
+  /* equivalente a 30px */
+}
+
+h3 {
+  /*font-size: 1.5rem;*/
+  /* equivalente a 20px */
+  font-size: 1.5rem;
+  /* equivalente a 16px */
+  /*font-size: 15px;*/
+  height: 1rem;
+  /* equivalente a 30px */
+  padding: auto;
+}
+
+/*É possível utilizar navegação em diversos elementos html, atribuindo class="navegacao" em ul, li, p, rodape */
+.navegacao {
+  background-color: transparent;
+}
+
+/* cor dos links de navegação*/
+.navegacao a {
+  color: rgb(76, 44, 23);
+}
+
+form div {
+  background: #FFFFE0;
+  border: 1px dashed;
+  #454545;
+  /* 
+  Bordas de baixo, de cima, da esquerda e da direita separadamente
+  border-bottom: 1px dashed; #454545;
+  border-top: 1px dashed; #454545;
+  border-left: 1px dashed; #454545;
+  border-right: 1px dashed; #454545;
+  */
+  margin: 1rem 2rem;
+  /* 1rem para as margens superior e inferior e 2rem para as laterais */
+  padding: 2rem;
+}
+
+label {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+input {
+  padding: 1rem;
+}
+
+[type="text"],
+[type="email"],
+textarea,
+label {
+  width: 100%;
+  /*display: block; faz a quebra de linha*/
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: yellow;
+
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 15%;
+  height: 484.5px;
+  background: #BDB76B;
+  color: darkslategrey;
+  color: darkgoldenrod;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 10%;
+}
+
+article {
+
+  float: left;
+  padding: 50px;
+  width: 85%;
+  background-color: #EEE8AA;
+  color: darkslategrey;
+}
+
+p {
+  color: darkgoldenrod;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
+}
+
+
+/* Clear floats after the columns */
+section::after {
+  background: #ccc;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #FAFAD2;
+  padding: 10px;
+  height: 65px;
+  text-align: center;
+  color: darkslategrey;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+
+  nav,
+  width: 100%;
+
+  article {
+
+    height: auto;
+  }
+}

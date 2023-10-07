@@ -1,0 +1,101 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6em;
+    color: #1f1e1e;
+    line-height: 200%;
+}
+
+footer {
+    color: #fdfdfd;
+    font-size: 0.8rem;
+}
+
+    {
+    margin: 20px auto;
+}
+
+#grafico-01 {
+    /*padding: 5px;*/
+    background-color: brown;
+    width: 500px;
+    height: 450px;
+    /*overflow: hidden;*/
+    border-radius: 50px;
+    /*border-radius: 50%;*/
+    margin: 50px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+#grafico-01 img {
+    width: 100%;
+    height: auto;
+    /*overflow: hidden;*/
+    border-radius: 40%;
+}
+
+/*Círculo*/
+#grafico-02 {
+    width: 400px;
+    height: auto;
+    overflow: hidden;
+    margin: 35px;
+}
+
+#grafico-03 {
+    /*padding: 8px;*/
+    background-color: blue;
+    width: 600px;
+    height: 300px;
+    margin: 40px auto;
+    border-style: solid;
+    padding: 8px;
+}
+
+#imagem-vetorial {
+    width: 10%;
+    border-style: dashed;
+}
+
+#canvas {
+    height: 2px;
+    width: 2px;
+}
+
+#grafico-04 {
+    width: 600px;
+    height: 300px;
+    margin: 30px;
+    border-style: solid;
+    border-style: ridge;
+    border-width: 60px 0 60px 120px;
+    border-color: grey yellow grey yellow;
+}
+
+/*FILTROS*/
+#grafico-01 {
+    filter: drop-shadow(8px 8px 10px #333);
+}
+
+.filtro {
+    filter: grayscale(100%);
+    /*Escala de cinza*/
+    /*filter: brightness(50%);*/
+    /*Brilho - 100% é igual ao normal*/
+    /*filter: invert(100%);*/
+    /*inversão de cores*/
+    /*filter: opacity(50%);*/
+    /*Opacidade - 100% é igual ao normal*/
+    /*filter: saturate(200%) sepia(80%);*/
+}
+
+.filtro:hover {
+    filter: grayscale(0%);
+    /*Este filtro faz com que retorne a coloração da imagem ao passar o mouse*/
+    /*filter: blur(2px)*/
+    /*Desfoque na imagem ao passar o mouse*/
+}
